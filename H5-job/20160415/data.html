@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>自定义属性</title>
+<script>
+	window.onload=function(){
+		var oBtn=document.querySelector('input');
+		//alert(oBtn.dataset.aaa);
+		for (var name in oBtn.dataset){
+			document.write(name+'='+oBtn.dataset[name]+'<br />');
+		}
+	};
+</script>
+</head>
+
+<body>
+<!--自定义属性以 	data-			开头-->
+<input type="button" value="按钮" data-aaa="abc" data-bbb="bca" data-ccc="cba">
+</body>
+</html>

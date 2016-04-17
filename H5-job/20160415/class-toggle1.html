@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>class-toggle1</title>
+<style>
+	div{ width:200px; height:300px; background:red; display:none}
+	div.on{ display:block}
+</style>
+<script>
+	window.onload =function(){
+		var oBtn=document.querySelector('input');
+		var oDiv=document.querySelector('div');
+		oBtn.onclick=function(){
+			oDiv.classList.toggle('on');	
+		};
+	};
+</script>
+</head>
+
+<body>
+<input type="button" value="按钮">
+<div></div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>获取一组元素</title>
+<script>
+	window.onload=function(){
+		var aInp=document.querySelectorAll('#box ul li input');
+		alert(aInp.length);
+	};
+</script>
+</head>
+
+<body>
+<div id="box">
+	<ul>
+        <li><input type="text" value="aaa"></li>
+        <li><input type="button" value="按钮1"></li>
+        <li><input type="text" value="bbb"></li>
+        <li><input type="button" value="按钮2"></li>
+         <li><input type="text" value="ccc"></li>
+    </ul>
+</div>
+</body>
+</html>
